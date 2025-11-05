@@ -132,32 +132,42 @@ ul {
     color: #2c3e50;
     margin-bottom: 10px;
 }
-input[type="checkbox"] {
+.feature-item input[type="checkbox"] {
     display: none;
 }
-.toggle-button {
-    display: flex;
-    gap: 1rem;
-    margin: 20px;
-}
-.toggle-button label {
+.feature-item .toggle-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
     background: rgba(255, 255, 255, 0.95);
     color: #667eea;
     padding: 10px 20px;
     border-radius: 25px;
-    cursor: pointer;
+    cursor: ponter;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
     transition: background 0.3s ease, color 0.3s ease;
+    user-select: none;
+    margin: 20px 0;
 }
-.toggle-button label:hover {
+.feature-item .toggle-button:hover {
     background: #667eea;
-    color: white
+    color: white;
 }
-#content {
+.feature-item .toggle-button .see-less {
     display: none;
 }
-#toggle:checked ~ #content {
+.feature-item .content {
+    display: none;
+    margin-top: 10px;
+}
+.feature-item input[type="checkbox"]:checked ~ .content {
     display: block;
+}
+.feature-item input[type="checkbox"]:checked ~ .toggle-button .see-more {
+    display: none;
+}
+.feature-item input[type="checkbox"]:checked ~ .toggle-button .see-less {
+    display: inline;
 }
 footer {
     background: rgba(255, 255, 255, 0.95);

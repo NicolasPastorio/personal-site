@@ -49,20 +49,37 @@
                     <p>It has two screens, one to display cards for special dates and another to display birthdays. 
                         Both screens feature a filter to easily search for cards, a button to hide cards, a switch-style 
                         button for sorting, and a button to add cards.</p>
+                        
+                        <input type="checkbox" id="toggle1" class="toggle">
+                        <div class="toggle-button">
+                            <label for="toggle1">
+                                <span class="see-more">See more</span>
+                                <span class="see-less">See less</span>
+                            </label>
+                        </div>
+                        <video class="content" width="220" height="420" autoplay loop muted>
+                            <source src="../assets/screen-configurations-beloved-date.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
                 </div>
                 <div class="feature-item">
                     <h4>🔩 Hidden settings menu</h4>
                     <p>It has a drawer-style menu on the left side where you can set the theme (light or dark), the time 
                         you want the annual notifications to occur, and a button to delete all cards.</p>
                     
-                    <input type="checkbox" id="toggle">
+                    <!-- Pode ter quantos quiser, basta mudar o id e o for do label (<input id="toggle2">, <label for="toggle2">)-->
+                    <input type="checkbox" id="toggle2" class="toggle2" class="toggle">
                     <div class="toggle-button">
-                        <label for="toggle">See more</label>
+                        <label for="toggle2">
+                            <span class="see-more">See more</span>
+                            <span class="see-less">See less</span>
+                        </label>
                     </div>
-                    <video id="content" width="220" height="420" autoplay loop muted>
+                    <video class="content" width="220" height="420" autoplay loop muted>
                         <source src="../assets/screen-configurations-beloved-date.mp4" type="video/mp4">
                         Your browser does not support the video tag.
                     </video>
+                    <!-- =========================================================================== -->
                 </div>
             </div>
         </section>
